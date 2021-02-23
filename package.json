@@ -1,0 +1,26 @@
+{
+  "build": {
+    "appId": "com.example.ElectronAutoUpdate"
+  },
+  "name": "auto-update",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^4.3.5"
+  },
+  "scripts": {
+    "start": "electron .",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "electron-builder  --windows",
+    "release": "electron-builder --windows --publish always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prernakakria123/new-auto_update.git"
+  }
+}
